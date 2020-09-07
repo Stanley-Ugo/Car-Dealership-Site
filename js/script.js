@@ -36,6 +36,11 @@ const CreateCars = (() => {
         makeCar('mercedes', 'german', 'img/car-german-3.jpeg', false, 'some model');
         makeCar('mercedes', 'german', 'img/car-german-4.jpeg', undefined, 'other model');
         makeCar('mercedes', 'german', 'img/car-german-5.jpeg', false);
+        makeCar('chevy', 'american', 'img/car-american-1.jpeg', false);
+        makeCar('chevy', 'american', 'img/car-american-2.jpeg', false);
+        makeCar('chevy', 'american', 'img/car-american-3.jpeg', false);
+        makeCar('chevy', 'american', 'img/car-american-4.jpeg', false);
+        makeCar('chevy', 'american', 'img/car-american-5.jpeg', false);
     }
     produceCars();
     console.log(cars);

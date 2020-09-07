@@ -21,4 +21,13 @@ const CreateCars = (() => {
             this.gas = gas;
         }     
     }
+
+    //car creation function
+    function makeCar (make, country, img, special, model, price, type, trans, gas) {
+
+        const car = new Car(make, country, img, special, model, price, type, trans, gas);
+        cars.push(car);
+    }
+
+
 })();

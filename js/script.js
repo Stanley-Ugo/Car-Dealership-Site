@@ -55,5 +55,6 @@ const CreateCars = (() => {
 
 })();
 
-console.log(CreateCars.cars);
-console.log(CreateCars.specialCars);
+const DisplaySpecialCars = ((CreateCars) => {
+    
+})(CreateCars);

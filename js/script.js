@@ -32,17 +32,28 @@ const CreateCars = (() => {
     function produceCars() {
         makeCar('chevy', 'american');
         makeCar('mercedes', 'german', 'img/car-german-1.jpeg', true);
-        makeCar('mercedes', 'german', 'img/car-german-2.jpeg', false);
+        makeCar('mercedes', 'german', 'img/car-german-2.jpeg');
         makeCar('mercedes', 'german', 'img/car-german-3.jpeg', false, 'some model');
         makeCar('mercedes', 'german', 'img/car-german-4.jpeg', undefined, 'other model');
         makeCar('mercedes', 'german', 'img/car-german-5.jpeg', false);
-        makeCar('chevy', 'american', 'img/car-american-1.jpeg', false);
+        makeCar('chevy', 'american', 'img/car-american-1.jpeg');
         makeCar('chevy', 'american', 'img/car-american-2.jpeg', false);
         makeCar('chevy', 'american', 'img/car-american-3.jpeg', false);
         makeCar('chevy', 'american', 'img/car-american-4.jpeg', false);
         makeCar('chevy', 'american', 'img/car-american-5.jpeg', false);
     }
     produceCars();
-    console.log(cars);
+    // console.log(cars);
+    //special cars
+    const specialCars = cars.filter(cars => cars.special === true);
+    // console.log(specialCars);
+
+    return {
+        cars,
+        specialCars
+    }
 
 })();
+
+console.log(CreateCars.cars);
+console.log(CreateCars.specialCars);

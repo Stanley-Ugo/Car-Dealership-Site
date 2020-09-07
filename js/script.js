@@ -23,11 +23,14 @@ const CreateCars = (() => {
     }
 
     //car creation function
-    function makeCar (make, country, img, special, model, price, type, trans, gas) {
+    function makeCar (make, country, img = 'img/car-default.jpeg', special = true, model = 'new model', price = 5000000, type = 'sedan', trans = 'automatic', gas = '50') {
 
         const car = new Car(make, country, img, special, model, price, type, trans, gas);
         cars.push(car);
     }
-
+    //produce car function
+    function produceCars() {
+        makeCar()
+    }
 
 })();

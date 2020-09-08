@@ -135,3 +135,9 @@ const DisplayCars = ((CreateCars) => {
         inventory.innerHTML = output;
     })
 })(CreateCars);
+
+//filter cars
+const FilterCars (() => {
+
+})();
+//show modal

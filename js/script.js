@@ -63,7 +63,22 @@ const DisplaySpecialCars = ((CreateCars) => {
 
     //document loaded event.
     document.addEventListener('DOMContentLoaded', () => {
-        
+        info.innerHTML = '';
+
+        let data = '';
+
+        specialCars.forEach(item => {
+            data += `<!-- Single item -->
+            <div class="featured-item my-3 d-flex p-2 text-capitalize align-items-baseline flex-wrap">
+                <span data-img="${item.img}" class="featured-icon mr-2">
+                    <i class="fas fa-car"></i>
+                </span>
+                <h5 class="font-weight-bold mx-1">${item.make}</h5>
+                <h5 class="mx-1">${item.model}</h5>
+            </div>
+            <!-- End of single item -->`
+        })
+        info.innerHTML = data;
     })
 
 })(CreateCars);

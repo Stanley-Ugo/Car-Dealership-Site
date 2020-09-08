@@ -81,4 +81,9 @@ const DisplaySpecialCars = ((CreateCars) => {
         info.innerHTML = data;
     })
 
+    //Change Image
+    info.addEventListener('click', (event) => {
+        
+    })
+
 })(CreateCars);

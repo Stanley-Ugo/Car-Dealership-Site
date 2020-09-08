@@ -32,9 +32,9 @@ const CreateCars = (() => {
     function produceCars() {
         makeCar('chevy', 'american');
         makeCar('mercedes', 'german', 'img/car-german-1.jpeg', true);
-        makeCar('mercedes', 'german', 'img/car-german-2.jpeg');
-        makeCar('mercedes', 'german', 'img/car-german-3.jpeg', false, 'some model');
-        makeCar('mercedes', 'german', 'img/car-german-4.jpeg', undefined, 'other model');
+        makeCar('bmw', 'german', 'img/car-german-2.jpeg');
+        makeCar('bmw', 'german', 'img/car-german-3.jpeg', false, 'some model');
+        makeCar('bmw', 'german', 'img/car-german-4.jpeg', undefined, 'other model');
         makeCar('mercedes', 'german', 'img/car-german-5.jpeg', false);
         makeCar('chevy', 'american', 'img/car-american-1.jpeg');
         makeCar('chevy', 'american', 'img/car-american-2.jpeg', false);
@@ -56,5 +56,14 @@ const CreateCars = (() => {
 })();
 
 const DisplaySpecialCars = ((CreateCars) => {
-    
+    const specialCars = CreateCars.specialCars;
+    //console.log(specialCars);
+
+    const info = document.querySelector('.featured-info');
+
+    //document loaded event.
+    document.addEventListener('DOMContentLoaded', () => {
+        
+    })
+
 })(CreateCars);

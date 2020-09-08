@@ -83,7 +83,10 @@ const DisplaySpecialCars = ((CreateCars) => {
 
     //Change Image
     info.addEventListener('click', (event) => {
-        
+        if(event.target.parentElement.classList.contains('featured-icon')){
+            const img = event.target.parentElement.dataset.img;
+            document.querySelector('.featured-photo').src =img;
+        }
     })
 
 })(CreateCars);

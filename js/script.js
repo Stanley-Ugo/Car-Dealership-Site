@@ -92,6 +92,10 @@ const DisplaySpecialCars = ((CreateCars) => {
 })(CreateCars);
 
 const DisplayCars = ((CreateCars) => {
+    //all cars
     const cars = CreateCars.cars;
-    console.log(cars);
+    //car container
+    const inventory = document.querySelector('.inventory-container');
+
+    
 })(CreateCars);

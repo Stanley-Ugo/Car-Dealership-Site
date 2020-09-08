@@ -90,3 +90,8 @@ const DisplaySpecialCars = ((CreateCars) => {
     })
 
 })(CreateCars);
+
+const DisplayCars = ((CreateCars) => {
+    const cars = CreateCars.cars;
+    console.log(cars);
+})(CreateCars);
